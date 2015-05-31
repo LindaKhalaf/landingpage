@@ -1,0 +1,282 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+/*  position: relative;*/
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    transform-style: inherit;
+}
+
+#image {
+  position: relative;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#image:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  /*position: absolute;*/
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("http://www.darveshtv.com/wp-content/uploads/2015/02/cool_hd_wallpapers_cool_hd_backgrounds.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1/*:before*/ {
+  background-image: url("http://nice-cool-pics.com/data/media/30/cool_design_desktop_wallpaper__5731_.jpg");
+position: relative;
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+    background-image: url("http://alfahadfurniture.com/wp-content/uploads/Cool-Wallpapers-Background-HD-Wallpaper.jpg");
+  background-attachment: fixed;
+}
+
+#slide3/*:before*/ {
+  background-image: url("http://wallfoy.com/wp-content/uploads/2014/09/awesome-background-2906-hd-wallpapers.jpg");
+position: relative;
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
+
+#slide5{
+    background-image: url("http://hdwallpapersfit.com/wp-content/uploads/2015/02/fire-awesome-wallpapers-desktop.jpg");
+  transform: translateZ(-1px) scale(2);
+  background-attachment: fixed;
+  z-index:-1;
+}
+
+/********************************************************************************************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext);
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: 200px;
+  background-color: #000;
+  border: 10px solid #1f1f1f;
+  box-shadow: 2px 2px 2px -1px black;
+}
+.wrapper ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-top: 75px;
+  display: inline-block;
+}
+.wrapper ul li {
+  display: inline-block;
+}
+.wrapper ul .letter-f1 {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 500ms ease-out;
+  transition-delay: 400ms;
+}
+.wrapper ul .letter-f2 {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 500ms ease-out;
+  transition-delay: 300ms;
+}
+.wrapper ul .letter-e2 {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 500ms ease-out;
+  transition-delay: 200ms;
+}
+.wrapper ul .letter-c {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 500ms ease-out;
+  transition-delay: 100ms;
+}
+.wrapper ul .letter-t {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 500ms ease-out;
+  transition-delay: 0s;
+}
+.wrapper ul:before {
+  content: '';
+  display: block;
+  background-color: white;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 2px;
+  transition: all 600ms ease-out;
+}
+.wrapper ul:hover .letter-f1 {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.wrapper ul:hover .letter-f2 {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  transition-delay: 100ms;
+}
+.wrapper ul:hover .letter-e2 {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  transition-delay: 200ms;
+}
+.wrapper ul:hover .letter-c {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  transition-delay: 300ms;
+}
+.wrapper ul:hover .letter-t {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  transition-delay: 400ms;
+}
+.wrapper ul:hover:before {
+  width: 325px;
+  transition: all 800ms ease-in;
+}
+/***************************************************************************************************************/
+#info{
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    border-radius: 10%;
+}
+
+#subject{
+height: 50px;
+width: 150;
+margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    border-radius: 10%;
+}
+
+#thank_you{
+    text-align: center;
+    vertical-align: center;
+    color: snow;
+    font-size: 50px;
+    margin-top: 150px
+
+}
+
+#thank-youz{
+    background-color: black;
+}
+
+#thank-you-links{
+    text-align: center;
+    vertical-align: center;
+
+}
+#contact-me-div{
+    background-color: black;
+    color: white;
+    height: 650px;
+    text-align: center;
+    vertical-align: center;
+
+
+}
+
+#email{
+    border-radius: 5%;
+}
